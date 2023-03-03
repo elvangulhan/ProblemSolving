@@ -28,6 +28,9 @@ void solve(){
     }
     fzc -= co - ((n - 1 - fz) - fzc); 
     loc -= (n - co) - (lo - loc);
+    if(fzc < 0 && loc < 0){
+        fzc = 0; loc = 0;
+    }
     if(fzc >= loc)
         c += fzc;
     else
